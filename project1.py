@@ -36,5 +36,3 @@ total_time = round(end_time - start_time, 2)
 
 print("--------------------")
 print(f"Nice Work! You finished in {total_time} seconds")
-
-#print(expression, answer)
