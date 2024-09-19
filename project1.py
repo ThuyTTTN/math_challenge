@@ -10,7 +10,10 @@ def generate_problem():
     operator = random.choice(OPERATORS)
 
     expression = str(left) + " " + str(operator) + " " + str(right)
-    print(expression)
-    return expression
+    
+    #eval() evaluates a string as if it was a python expression
+    answer = eval(expression)
+    return expression, answer
 
-generate_problem()
+expression, answer = generate_problem()
+print(expression, answer)
